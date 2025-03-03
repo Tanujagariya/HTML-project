@@ -1,0 +1,28 @@
+form {
+         border: 2px solid black;
+         padding: 1rem;
+         max-width: 400px;
+         margin-inline: auto;
+     }
+
+     .form-group {
+         margin-bottom: 20px;
+     }
+
+     label:not(:has([type="radio"], [type="checkbox"])) {
+         display: block;
+         font-size: 1em;
+         margin-bottom: 5px;
+     }
+
+     input:not([type="radio"], [type="checkbox"]) {
+         width: 100%;
+         padding: 0.5em 1em;
+         font-size: 1rem;
+       
+     }
+     select{
+      appearance: none;
+      background-image:url(image/Doraemon_cha.png) ;
+      background-repeat: no-repeat;
+     }
