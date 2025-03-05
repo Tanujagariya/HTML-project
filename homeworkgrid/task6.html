@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Task 2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            width: 400px;
+            height: 300px;
+            border: 2px solid wheat;
+            position: relative;
+        }
+.overlap{
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr ;
+    grid-template-rows: 70px 70px 70px;
+    max-width: 600px;
+    margin-inline: auto;
+}
+        .grid-item {
+            background-color: aqua;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            position: absolute;
+        }
+
+        
+        .grid-item.one {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            width: 60%;
+            height: 60%;
+            opacity: 0.7;
+        }
+
+        .grid-item.two {
+            grid-column: 2 / span 2;
+            grid-row: 2 / span 2;
+            width: 60%;
+            height: 60%;
+            background-color: rgba(255, 99, 71, 0.7); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item one">One</div>
+        <div class="grid-item two">Two</div>
+    </div>
+
+</body>
+</html>

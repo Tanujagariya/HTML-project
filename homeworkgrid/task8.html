@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Balloons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        .container-item {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .tag {
+            background: #888;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+       
+        .full-width {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Task 4</h2>
+    <p>Use grid layout and flexbox to style the elements below.</p>
+
+    <div class="container">
+        <div class="container">
+            <img src="image/balloons1.jpg" alt="Hot Air Balloon">
+            <div class="tags">
+                <span class="tag">balloon</span>
+                <span class="tag">red</span>
+                <span class="tag">sky</span>
+                <span class="tag">blue</span>
+                <span class="tag">Hot air balloon</span>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <img src="image/balloons2.jpg" alt="Balloons in the city">
+            <div class="tags">
+                <span class="tag">balloons</span>
+                <span class="tag">houses</span>
+                <span class="tag">train</span>
+                <span class="tag">harborside</span>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <img src="image/balloons3.jpg" alt="Inflating Balloon">
+            <div class="tags">
+                <span class="tag">balloons</span>
+                <span class="tag">inflating</span>
+                <span class="tag">green</span>
+                <span class="tag">blue</span>
+            </div>
+        </div>
+
+
+</body>
+</html>
